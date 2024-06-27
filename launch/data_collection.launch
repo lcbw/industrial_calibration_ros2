@@ -5,7 +5,7 @@
   <arg name="save_path" default="/tmp/calibration"/>
   <arg name="config_file" default="$(find-pkg-share industrial_calibration_ros)/config/target_detector_config.yaml"/>
   <arg name="sync_time" default="1.0"/>
-  <arg name="image_topic" default="/camera/color/image_raw"/>
+  <arg name="image_topic" default="/my_camera/pylon_ros2_camera_node/image_raw"/>
 
   <!-- Target detector node -->
   <node name="target_detector_node" pkg="industrial_calibration_ros" exec="industrial_calibration_ros_target_detector" output="screen">
