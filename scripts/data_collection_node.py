@@ -38,7 +38,7 @@ class DataCollector(Node):
     def __init__(self):
         super().__init__('data_collector')
 
-        self.declare_parameter('save_path', '/tmp')
+        self.declare_parameter('save_path', '~/tmp')
         self.declare_parameter('base_frame', 'base_frame')
         self.declare_parameter('tool_frame', 'tool_frame')
 
